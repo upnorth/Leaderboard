@@ -11,6 +11,8 @@ Library that provides in-memory tracking of scores for one or more concurrent li
 
 ### startGame()
 
+Adds new game to the leaderboard with an initial score of 0 - 0.
+
 Takes a request object with the team names:
 ```
 StartGameRequest {
