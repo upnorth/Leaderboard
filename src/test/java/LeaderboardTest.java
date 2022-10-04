@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LeaderboardTest {
     @Test
-    void shouldCreateNewGameWithZeroScoresWhenStartingNewGame() {
+    void shouldAddNewGameWithZeroScoresWhenStartingNewGame() {
         Leaderboard lb = new Leaderboard();
         String homeTeamName = "Norge";
         String awayTeamName = "Sverige";
