@@ -31,4 +31,25 @@ class LeaderboardTest {
         Game game = lb.getGame(gameId);
         assertNull(game);
     }
+
+    @Test
+    void shouldGiveExistingGameNewScoresWhenUpdated() {
+        // TODO: Internal score logic of Game class should be done in separate test
+        Leaderboard lb = new Leaderboard();
+        StartGameRequest startGameRequest = new StartGameRequest(homeTeamName, awayTeamName);
+        int gameId = lb.startGame(startGameRequest);
+        int updatedHomeTeamScore = 3;
+        int updatedAwayTeamScore = 4;
+        UpdateScoreRequest updateScoreRequest = new UpdateScoreRequest(
+                gameId,
+                updatedHomeTeamScore,
+                updatedAwayTeamScore
+        );
+
+        lb.updateScore(updateScoreRequest);
+
+        Game game = lb.getGame(gameId);
+        assertEquals(updatedHomeTeamScore, game.getHomeTeamScore());
+        assertEquals(updatedAwayTeamScore, game.getAwayTeamScore());
+    }
 }

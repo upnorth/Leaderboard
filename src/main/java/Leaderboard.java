@@ -23,4 +23,10 @@ public class Leaderboard implements LeaderboardActions {
         // TODO: Error handling for no matching game
         games.remove(gameId);
     }
+
+    public void updateScore(UpdateScoreRequest request) {
+        // TODO: Error handling for no matching game
+        Game game = games.get(request.getGameId());
+        game.updateScore(request.getUpdatedHomeTeamScore(), request.getUpdatedAwayTeamScore());
+    }
 }

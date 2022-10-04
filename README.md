@@ -24,3 +24,17 @@ StartGameRequest {
 ### finishGame()
 
 Finishes game by removing it from the Leaderboard. Takes game id.
+
+### updateGame()
+
+Updates scores for active game.
+
+Takes a request object with game id and new scores:
+
+```
+UpdateScoreRequest {
+ int gameId;
+ int updatedHomeTeamScore
+ int updatedAwayTeamScore
+}
+```

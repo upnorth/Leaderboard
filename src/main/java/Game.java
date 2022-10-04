@@ -24,4 +24,10 @@ public class Game {
     public int getAwayTeamScore() {
         return awayTeamScore;
     }
+
+    public void updateScore(int updatedHomeTeamScore, int updatedAwayTeamScore) {
+        // TODO: Validation of new scores (no negative numbers)
+        homeTeamScore = updatedHomeTeamScore;
+        awayTeamScore = updatedAwayTeamScore;
+    }
 }
