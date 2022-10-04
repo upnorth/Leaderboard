@@ -1,6 +1,8 @@
 import java.util.HashMap;
 
 public class Leaderboard implements LeaderboardActions {
+    // Note: More used to making APIs where Leaderboard would be a DI instantiated service
+    // But since the task is designed to be as simple as possible, I just made a class
     private HashMap<Integer, Game> games = new HashMap<Integer, Game>();
     private int nextGameId = 1;
 
