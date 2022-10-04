@@ -5,7 +5,7 @@ Library that provides in-memory tracking of scores for one or more concurrent li
 ## Assumptions
 
 * OK to use somewhat outdated versions/tools. With no specific technical demands, I'm using Java 8 with Maven and Junit simply due to it being the latest Java tech stack I'm familiar with.
-* With that in mind, no particular deliverable or script is provided for specific technical use-cases for evaluation.
+* With that in mind, no particular deliverable or script is provided for specific technical use-cases for evaluation. 
 
 ## API
 
