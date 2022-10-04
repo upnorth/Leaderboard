@@ -18,4 +18,9 @@ public class Leaderboard implements LeaderboardActions {
     public Game getGame(int gameId) {
         return games.get(gameId);
     }
+
+    public void finishGame(int gameId) {
+        // TODO: Error handling for no matching game
+        games.remove(gameId);
+    }
 }

@@ -20,3 +20,7 @@ StartGameRequest {
  String awayTeamName
 }
 ```
+
+### finishGame()
+
+Finishes game by removing it from the Leaderboard. Takes game id.
