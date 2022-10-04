@@ -11,6 +11,10 @@ Library that provides in-memory tracking of scores for one or more concurrent li
 
 ### startGame()
 
-Takes a StartGameRequest object which contains 2 strings for:
- * homeTeamName
- * awayTeamName
+Takes a request object with the team names:
+```
+StartGameRequest {
+ String homeTeamName
+ String awayTeamName
+}
+```
