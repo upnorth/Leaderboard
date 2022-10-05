@@ -60,4 +60,10 @@ public class Leaderboard implements LeaderboardActions {
 
         return sb.toString();
     }
+
+    @Override
+    public List<Game> getSummaryData() {
+        sortGamesByTotalScoresAndRegistration();
+        return games;
+    }
 }
