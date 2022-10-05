@@ -6,7 +6,7 @@ Library that provides in-memory tracking of scores for one or more concurrent li
 
 #### Functional
 
-* No validation of input for team names or scores. Names should be a problem but scores should probably be checked to not be negative at least.
+* Validation of input for team names and scores should be added before use in production. Names shouldn't be a problem but scores should probably be checked to not be negative at least.
 
 #### Technical
 * OK to use somewhat outdated versions/tools. With no specific technical demands, I'm using Java 8 with Maven and Junit simply due to it being the latest Java tech stack I'm familiar with.
